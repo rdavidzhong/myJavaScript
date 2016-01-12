@@ -1,3 +1,3 @@
 # myJavaScript
-For review purpose
+For review and exercise purpose
 
