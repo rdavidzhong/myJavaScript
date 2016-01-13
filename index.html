@@ -19,12 +19,33 @@
 
         // Boolean
         //Boolean (10>9);
-        function myFunction() {
-            document.getElementById("demo").innerHTML = Boolean(10 > 9);
+//        function myFunction() {
+//            document.getElementById("demo").innerHTML = Boolean(10 > 9);
+//        }
+//
+//        // Operators
+//        // x++, x--, x += y, x-= y, x*= y, x /= y
+//
+//        alert("test");
+//
+//        // Function
+//        function test ()
+//        {
+//            alert('test function demo');
+//        }
+
+        // Call function
+      //  test();
+
+        function alertMessage(message)
+        {
+            alert(message);
         }
 
-        // Operators
-        // x++, x--, x += y, x-= y, x*= y, x /= y
+        alertMessage("checking");
+        alertMessage("come here");
+
+        // Global and local variables
 
 
     </script>
@@ -35,6 +56,15 @@
 <p>Display true</p>
 <button onclick="myFunction()">Try it</button>
 <p id="demo"></p>
+
+<form>
+    <input type="button" value="click me" onclick="alert('cliked me');"/>
+
+</form>
+
+<form>
+<input type="button" value="Move on to me" onmouseover="alert('move on to me');"/>
+</form>
 
 </body>
 </html>
