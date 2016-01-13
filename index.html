@@ -46,6 +46,20 @@
         alertMessage("come here");
 
         // Global and local variables
+        var v = "Global"; // Global
+
+        function printv1()
+        {
+            var w = "Local variable"; // Local variable
+            document.write (v + " inside function <br/>");
+            document.write (w + " inside function <br/>");
+        }
+
+        printv1();
+        document.write(v + "outside function <br/>");
+
+        // Array
+
 
 
     </script>
