@@ -115,15 +115,25 @@
 
         // while loop
         var counter=1;
-        while(counter <= 10)
+        while(counter <= 10) // Will run 10 times
         {
             document.write("while loop" + counter+"</p>");
             counter++;
         }
 
+        // Do while loop
+        document.write("<br/>");
 
+        var count = 1;
+        do
+        {
+            // Always run at least once
+            document.write("This is do-while" + count +"<br/>");
+            count++;
+        }
+        while( count <=10 ); // Will run 11 times
 
-
+        document.write("<br/>");
 
     </script>
 </head>
