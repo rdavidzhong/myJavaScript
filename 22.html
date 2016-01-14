@@ -7,15 +7,58 @@
     <script type="text/javascript">
        // document.write("hello");
 
-        for (var i = 0; i < 5; i++)
+       // for loop
+        for (i = 0; i < 15; i++)
         {
             document.write("for loop " + i + " times</br>");
-
         }
+
+        // Object
+        var x = "david";
+
+        document.write(x.length); // objectname.propertyname
+        document.write("</br>");
+        document.write(x.toUpperCase()); // objectname.method()
+
+        // Referencing elements
+        document.getElementById('para'); // Method
+
+        function change ()
+        {
+            var para = document.getElementById('para');
+            para.innerHTML = "That tickles";
+        }
+
+        // Changing image source
+
+        var image_tracker = 'f';
+        function changelogo()
+        {
+            var image = document.getElementById('social');
+            image.src = "twtr.png"
+          //  image.src = "fb.jpg"
+          //  alert(image.src);
+            if(image_tracker == 'f')
+            {
+                image.src = 'twtr.png';
+                image_tracker = 't';
+            }
+            else
+            {
+                image.src = 'fb.jpg';
+                image_tracker = 'f';
+            }
+        }
+
     </script>
 
 </head>
 <body>
+
+   <!-- <p id="para"> Click me </p> -->
+    <p id="para" onclick="change();"> Click me </p>
+
+   <img src="fb.jpg" alt="Social logo" id="social" onclick="changelogo();">
 
 </body>
 </html>
