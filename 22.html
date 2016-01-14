@@ -50,6 +50,15 @@
             }
         }
 
+        // Gonna Finish js today Jan 11, 2016
+        // Using timer
+        document.write("</br>");
+
+     //   setTimeout('changelogo()', 1000); // Only change once
+
+        var timer = setInterval('changelogo()', 1000); // Can use it to make a dice roller function XD
+
+
     </script>
 
 </head>
@@ -58,7 +67,8 @@
    <!-- <p id="para"> Click me </p> -->
     <p id="para" onclick="change();"> Click me </p>
 
-   <img src="fb.jpg" alt="Social logo" id="social" onclick="changelogo();">
+  <!-- <img src="fb.jpg" alt="Social logo" id="social" onclick="changelogo();">  -->
+   <img src="fb.jpg" alt="Social logo" id="social" onclick="clearInterval(timer);">
 
 </body>
 </html>
