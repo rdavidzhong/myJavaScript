@@ -3,8 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <script type="text/javascript">
+    function write_name()
+    {
+        var welcome_parra = document.getElementById('welcome');
+        var name = document.getElementById('name');
+
+        welcome_parra.innerHTML = "Welcome " + name.value;
+    }
+
+    </script>
+
 </head>
 <body>
+    <p id="welcome"> </p>
+    <form>
+        What's your name:<input type="text" id="name"/></br>
+        <input type="button" value="done" onclick="write_name();"/>
+    </form>
 
 </body>
 </html>
