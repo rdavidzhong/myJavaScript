@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+
+        function check_info()
+        {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if(username==" " || password==" ")
+            {
+                alert('Fill in field');
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
+        }
+    </script>
+
+
+    // Done here Jan 14, 2016
+</head>
+<body>
+
+    <!--for backend form-->
+    <form action="submission.html" method="post" onsubmit="return check_info();" > <!--or get methord, post is more secure-->
+        username:<input type="text" name="username" id="username"/>
+        password:<input type="password" name="password" id="password"/>
+        <input type="submit" value="login"/>
+
+    </form>
+
+</body>
+</html>
